@@ -89,11 +89,9 @@ export class GameController {
     }
 
     move_down() {
-        console.log(this.grid);
         const [grid, score] = this.grid_moved_down(this.grid);
         this.score += score;
         this.grid = grid;
-        console.log(this.grid);
     }
 
     move_up() {
